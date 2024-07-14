@@ -56,6 +56,8 @@ Load Balancing: Assists in designing load balancing algorithms that distribute t
 
 ## Types of Big O Notations
 
+There are seven types of Big O Notations. These are:
+
 ![image](https://github.com/DerartuDagne/Data-Structure-and-Algorithms/assets/112087783/2f848fa4-bac3-421a-a5c3-b4042692c965)
 
  Complexity chart for all big O notations. | Image: WIkimedia Commons
@@ -63,7 +65,7 @@ Load Balancing: Assists in designing load balancing algorithms that distribute t
 |-----|--------------------------------|---------------------|
 |01   |[O(1): Constant complexity](https://github.com/DerartuDagne/Data-Structure-and-Algorithms/blob/main/BIG%20O/o(1)_constant_complexity.py)|Excellent/Best|
 |02   |[O(logn): Logarithmic complexity](https://github.com/DerartuDagne/Data-Structure-and-Algorithms/blob/main/BIG%20O/o(logn)_logarithmic_complexity.py) |Good|
-|03   |[ O(n): Linear complexity]()        |Fair|
+|03   |[ O(n): Linear complexity](https://github.com/DerartuDagne/Data-Structure-and-Algorithms/blob/main/BIG%20O/o(n)_linear_complexity.py)        |Fair|
 |04   |[O(nlogn): Loglinear complexity]()         |Bad|
 |05   |[O(n^x): Polynomial complexity]()         |Horiible|
 |06   |[O(X^n): Exponential time]()         |Horrible|
@@ -80,33 +82,34 @@ Load Balancing: Assists in designing load balancing algorithms that distribute t
    
 2.[O(logn): Logarithmic complexity](https://github.com/DerartuDagne/Data-Structure-and-Algorithms/blob/main/BIG%20O/o(logn)_logarithmic_complexity.py).
     
-    Let's start with the definition of logarithm to get the concept of it.
+  Let's start with the definition of logarithm to get the concept of it.
 
-    "A logarithm is the power to which a base, usually 10 or e (Euler's number), must be raised to produce a 
+  "A logarithm is the power to which a base, usually 10 or e (Euler's number), must be raised to produce a 
      given number. "
     
-     In mathematical terms, if b^y = x, then y is the logarithm of x to the base b, written as logb(x)=y.
+   In mathematical terms, if b^y = x, then y is the logarithm of x to the base b, written as logb(x)=y.
 
-     Example:
+   Example:
 
-     If 2^10 = 1024,then the logarithm of 1024 to the base 2 is 10, then the logarithm of 1024 to the base 2 
-     is 10, written as log2(1024) = 10.
+   If 2^10 = 1024,then the logarithm of 1024 to the base 2 is 10, then the logarithm of 1024 to the base 2 
+   is 10, written as log2(1024) = 10.
     
    * Desirable Efficiency: Functions with O(logN) complexity are very efficient, close to O(1) functions.
    * Common Use: Many algorithms have 𝑂(log𝑁)complexity, making it important to recognize and understand.
 
-     **Examples of 𝑂(log𝑁) Complexity**
+  **Examples of 𝑂(log𝑁) Complexity**
    
-   * Binary Search: Finding an element in a sorted array.
+   Binary Search: Finding an element in a sorted array.
      
-       Instead of iterating through an entire array to find a value, a binary search offers a more efficient
-       method. Here’s how it works:
+   Instead of iterating through an entire array to find a value, a binary search offers a more efficient
+  
+   method. Here’s how it works:
      
-       Initialize: Set min = 0 and max = n - 1.
+   Initialize: Set min = 0 and max = n - 1.
      
-       Calculate Midpoint: Find the middle index: mid = (min + max) // 2.
+   Calculate Midpoint: Find the middle index: mid = (min + max) // 2.
      
-       Compare:
+   Compare:
      
               If arr[mid] == target, return mid.
      
@@ -116,33 +119,33 @@ Load Balancing: Assists in designing load balancing algorithms that distribute t
      
         Repeat: Go back to step 2 until the target is found or the range is empty.
      
-     **Example in Action**
+   **Example in Action**
      
-     Let's find the value 46 in the array [4, 8, 10, 14, 27, 31, 42, 52]:
+    Let's find the value 46 in the array [4, 8, 10, 14, 27, 31, 42, 52]:
 
              Initial Setup: min = 0, max = 7
 
-     **First Iteration:**
+   **First Iteration:**
      
               mid = (0 + 7) // 2 = 3
 
                arr[3] = 14 (less than 46), so set min = 4
      
-     **Second Iteration:**
+   **Second Iteration:**
      
                 mid = (4 + 7) // 2 = 5
      
                 arr[5] = 31 (less than 46), so set min = 6
      
      
-     **Third Iteration:**
+   **Third Iteration:**
      
                  mid = (6 + 7) // 2 = 6
      
                  arr[6] = 42 (equals target), return 6
      
      
-     ### Understanding 𝑂(log𝑁) Complexity
+  ### Understanding 𝑂(log𝑁) Complexity
 
      
      Binary search reduces the search area by half each iteration:
@@ -168,9 +171,67 @@ Load Balancing: Assists in designing load balancing algorithms that distribute t
                  2^3 = 8 -> log2 ^8 = 3
     
                  2k = N -> log2 N = k
+                 
+3. [O(n): Linear complexity](https://github.com/DerartuDagne/Data-Structure-and-Algorithms/blob/main/BIG%20O/o(n)_linear_complexity.py).
+    
+    Linear time complexity means that the runtime of an algorithm increases directly with the size of the input. Represented by O(n),  where n is the input size, it indicates that if 
 
- 4. O(n): Linear complexity.
- 5. O(nlogn): Loglinear complexity.
- 6. O(n^x): Polynomial complexity.
- 7. O(X^n): Exponential time.
- 8. O(n!): Factorial complexity.
+    the  input size doubles, the runtime also doubles.
+
+    **Real-World Example**
+
+    **1. Scenario: Checking Attendance in a Classroom**
+
+    Imagine a teacher has a list of students and needs to check attendance. The teacher calls out each student's name one by one from the list and marks whether they are present or 
+    absent.
+    
+     i. Class with 5 students: The teacher calls each name and marks attendance. This takes a certain amount of time.
+       
+     ii. Class with 10 students: The teacher calls each name and marks attendance. This takes roughly twice as long as it did with 5 students.
+       
+     iii. Class with 20 students: The teacher calls each name and marks attendance. This takes roughly four times as long as it did with 5 students.
+    
+    The time it takes to complete the attendance check is directly proportional to the number of students in the class.
+
+    **2. Scenario: Calculating the Sum of Elements in a List**
+
+    The task is to calculate the sum of all numbers in a list. This involves iterating through each element in the list and adding it to a running total.
+    
+    **3. Scenario: Finding the Maximum Element in a List**
+    
+    The task is to find the largest number in a list of integers. This involves iterating through each element in the list and keeping track of the largest number found so far.
+    
+    **4. Scenario: Counting the Number of Rolls to Get a Specific Dice Number**
+    
+    Imagine a game where you need to roll a six-sided die until we get a six. The task is to count how many rolls it takes to get a six.
+ 
+  4. O(nlogn): Loglinear complexity.
+    
+     O(n log n), often referred to as "loglinear" complexity, is a time complexity commonly found in algorithms that involve a combination of linear and logarithmic operations.
+    
+     Understanding this complexity is crucial in analyzing the efficiency of algorithms, especially when dealing with larger datasets.
+   
+     Example: Merge sort
+    
+  5. O(n^x): Polynomial complexity.
+
+     Exponential time complexity, denoted as O(X^n), where X is a constant and n is the size of the input, represents algorithms whose runtime grows exponentially with the input size. 
+
+     This complexity is highly inefficient for large input sizes.
+
+     Example:Bubble Sort, Insertion Sort
+    
+  6. O(X^n): Exponential complexity.
+
+     Factorial time complexity, denoted as O(n!), represents algorithms whose runtime grows factorially with the input size. This complexity is even more inefficient than exponential 
+
+     time complexity.
+    
+     Example: Solving the Traveling Salesman Problem (TSP) with a brute force approach.
+
+ 7.O(n!): Factorial complexity
+  
+      Example: Generating all permutations of a set.
+
+
+
