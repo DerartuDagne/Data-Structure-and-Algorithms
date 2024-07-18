@@ -26,7 +26,7 @@ Example:
 
  - **Memory Address**: refers to a unique identifier that represents the location of a value in the computer's memory.
  
- - **Value**:  refers to the actual data or content stored at a specific location in memory. [Example]()
+ - **Value**:  refers to the actual data or content stored at a specific location in memory. [Example](https://github.com/DerartuDagne/Data-Structure-and-Algorithms/blob/main/Data%20Structures/Arrays/understanding_index%2C_memory_address%2C_value_in_array.py)
  
 ![image](https://github.com/user-attachments/assets/7a168360-cd23-4782-92ad-364e7847219f)
 
@@ -44,7 +44,7 @@ Let's take example, a list of student names. Storing each student's name in a si
 
 Using an array (or list in Python) simplifies the management of these names.
 
-[Example Without Array]()
+[Example Without Array](https://github.com/DerartuDagne/Data-Structure-and-Algorithms/blob/main/Data%20Structures/Arrays/importance_of_arrays.py)
 
 Using individual variables for each student's name:
     
@@ -74,13 +74,13 @@ Using individual variables for each student's name:
     
 This approach is not scalable and becomes unwieldy as the number of students increases.
 
-[Example With Array]()
+[Example With Array](https://github.com/DerartuDagne/Data-Structure-and-Algorithms/blob/main/Data%20Structures/Arrays/importance_of_arrays.py)
 
 Using an array (or list) to store and manage the student names:
 
 Arrays allow for efficient access to elements using an index, which represents the position of the element within the array.
 
-[Another Example with More Students]()
+[Another Example with More Students](https://github.com/DerartuDagne/Data-Structure-and-Algorithms/blob/main/Data%20Structures/Arrays/importance_of_arrays.py)
 
 Imagine we have 300 student names. Using individual variables would be impractical.
 
