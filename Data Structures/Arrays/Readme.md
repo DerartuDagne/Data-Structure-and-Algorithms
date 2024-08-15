@@ -86,18 +86,58 @@ Imagine we have 300 student names. Using individual variables would be impractic
 
 With an array, we can easily manage and search through the list.
 
-# Array Methods
+## Types of Arrays
 
-   |No.  |Data structure           | Categories|
-   |-----|--------------------------------|---------------------|
-   |01   |append()|Adds an element at the end of the array list|
-   |02   |reverse()|Reverses the order of an array list|
-   |03   |clear()|Eliminates all elements from the array list|
-   |04   |pop()|Removes an element from the specified position|
-   |04   |count()|Returns the elements along with their total number|
-   |05   |insert()|Adds an element to the specified position in the array list|
-   |06   |copy()|Returns a copy of the array list|
-   |07   |extend()|Add the elements of an array list to the end of the current list|
-   |08   |remove()|Eliminates the first element with the specified value|
-   |09   | index()|Returns the index of the first element in an array list with the specified value|
-   |10   | sort()|Sorts the array list|
+Arrays can generally be categorized into two main types:
+
+***Static Array**:
+
+A static array is an array where the size is determined and allocated at compile time. This means that the amount of memory 
+
+required for the array is fixed and cannot be changed during program execution.
+
+Characteristics:
+
+- Fixed Size: The size of the array is set when the program is compiled and cannot be altered later.
+
+- Memory Allocation: Memory for the array is allocated statically at compile time, which can lead to efficient use of resources.
+
+- Limitations: Since the size is fixed, there can be wasted space if the array is not fully utilized, or insufficient space if the array 
+
+grows beyond its initial size.
+
+***Dynamic Array***:
+
+A dynamic array is an array where the size is determined at runtime. This allows the array to grow or shrink as needed during 
+
+the execution of the program.
+
+Characteristics:
+
+- Flexible Size: The size of the array can be modified during runtime, which provides greater flexibility to handle varying amounts of data.
+
+- Memory Allocation: Memory for the array is allocated dynamically during program execution, typically using heap memory.
+
+- Advantages: Allows for efficient memory usage as the array can expand or contract based on actual needs. This prevents the allocation of 
+
+   excess memory and allows for handling larger datasets that are not known at compile time.
+
+- Management: The system manages resizing and memory reallocation, which can involve overhead in terms of performance compared
+
+  to static arrays
+
+ Python does not have a built-in static array type like those found in languages such as C or C++. In Python, lists are the most common 
+ 
+ data structure used to handle collections of items, and they function more like dynamic arrays rather than static arrays.
+
+ ## Common Array Method Interms of Complexity
+ 
+  Common Array Method Interms of Complexity to identify either Worst case scenario or Average case scenario
+
+|No.  |Methods                        |Time Complexity|
+|-----|--------------------------------|--------------------------------|
+|01   |       Access |O(1)|
+|02   |Search      |O(n)|
+|03   |Insert      |O(n)|
+|04   |Delete       |beginning O(n), MiddleO(n),End O(1)|
+|05   |Traversal       |O(n)| 
