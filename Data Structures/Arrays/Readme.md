@@ -130,6 +130,18 @@ Characteristics:
  
  data structure used to handle collections of items, and they function more like dynamic arrays rather than static arrays.
 
+## Applications of Array
+ 
+Arrays are used in a wide variety of applications, including:
+
+- Storing data for processing
+  
+- Implementing data structures such as stacks and queues
+  
+- Representing data in tables and matrices
+  
+- Creating dynamic data structures such as linked lists and trees
+
  ## Common Array Method Interms of Complexity
  
   Common Array Method Interms of Complexity to identify either Worst case scenario or Average case scenario
